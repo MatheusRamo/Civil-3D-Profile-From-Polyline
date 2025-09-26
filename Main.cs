@@ -128,7 +128,7 @@ namespace CreateProfileFromPolyline
                                     endSegment = arcSegment2dAt.EndPoint;
                                     double difEndSegmentArc_x = endSegment.X - gridPadding - x;
                                     double difEndSegmentArc_y = (endSegment.Y - y) / profileViewStyle.GraphStyle.VerticalExaggeration + profileView.ElevationMin;
-                                    coodEndSeg = new Point2d(difEndSegmentArc_x, difEndSegmentArc_x);
+                                    coodEndSeg = new Point2d(difEndSegmentArc_x, difEndSegmentArc_y);
 
                                   
                                     sampleSegment = arcSegment2dAt.GetSamplePoints(11)[5];
